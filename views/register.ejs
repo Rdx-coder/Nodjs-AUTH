@@ -1,0 +1,111 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .card h1 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFF;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="password"]:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-primary {
+    background-color: #FF4081;
+    color: #FFF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #F50057;
+  }
+
+  .mt-4 {
+    margin-top: 16px;
+  }
+
+  .mt-4 a {
+    color: #FF4081;
+    text-decoration: none;
+  }
+
+  .mt-4 a:hover {
+    color: #F50057;
+  }
+</style>
+
+<div class="card">
+  <h1><img src="/assets/secure-icon.png" alt="icon" width="20%"></h1>
+  <h2 style="color: #FF4081;">Register New User</h2>
+  <%- include ("./messages") %>
+  <form action="/auth/register" method="POST">
+    <div class="form-group">
+      <label for="name" style="color: #333;">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter Name" value="<%= typeof name != 'undefined' ? name : '' %>">
+    </div>
+    <div class="form-group">
+      <label for="email" style="color: #333;">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+    </div>
+    <div class="form-group">
+      <label for="password" style="color: #333;">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+    </div>
+    <div class="form-group">
+      <label for="password2" style="color: #333;">Confirm Password</label>
+      <input type="password" id="password2" name="password2" placeholder="Confirm Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+    </div>
+    <button type="submit" class="btn-primary">Register</button>
+  </form>
+  <p class="mt-4" style="color: #333;">Already have an account? <a href="/auth/login">Login</a></p>
+</div>
