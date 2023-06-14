@@ -1,0 +1,62 @@
+Introduction
+
+Introduce the topic of the video: building a Node.js authentication app.
+Briefly explain the importance of authentication in web applications.
+Mention the technologies and libraries used in the project: Express.js, Passport.js, MongoDB.
+Project Setup
+
+Start with a clean project directory.
+Show how to clone the repository from GitHub.
+Explain how to install the project dependencies using npm install.
+Set up the environment variables using a .env file.
+Project Structure
+
+Give an overview of the project structure.
+Explain the MVC (Model-View-Controller) architecture used.
+Walk through the key directories: app/, public/, and the main files: app.js, passport-config.js, server.js.
+Authentication Flow
+
+Discuss the authentication flow of the application.
+Explain the steps: user registration, login, logout, and password reset.
+Local Email/Password Authentication
+
+Dive into the code and show the implementation of local email/password authentication.
+Discuss the use of Passport.js and the LocalStrategy.
+Walk through the authentication routes and controllers.
+Highlight the hashing of passwords using bcrypt.js.
+Google OAuth Authentication
+
+Discuss the implementation of Google OAuth authentication.
+Explain the use of Passport.js and the GoogleStrategy.
+Walk through the authentication routes and controllers.
+Highlight the usage of Google API credentials.
+Views and Templates
+
+Show the views/ directory and explain the usage of EJS templates.
+Walk through the main views: signup, login, home, and the partials.
+Discuss how the templates are rendered and how flash messages are displayed.
+Database Integration
+
+Discuss the integration with MongoDB using Mongoose.
+Explain the user schema and model.
+Show how the user data is stored and retrieved from the database.
+Testing the Application
+
+Demonstrate how to run the application using npm start.
+Walk through the registration, login, logout, and password reset functionalities.
+Show the different routes in action using a tool like Postman.
+Conclusion
+
+Recap the key points covered in the video.
+Encourage viewers to try building their own authentication app using the provided code.
+Thank them for watching and invite them to subscribe to your channel.
+Feel free to customize the script to fit your style and preferences. Good luck with your YouTube video!
+
+
+
+
+git hub link :
+ 
+youtube link :
+
+Hosting link :
