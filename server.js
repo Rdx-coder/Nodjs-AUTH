@@ -4,6 +4,9 @@ const mongoose = require('mongoose'); // Importing Mongoose for MongoDB connecti
 const flash = require('connect-flash'); // Importing Connect Flash for flash messages
 const session = require('express-session'); // Importing Express Session for session management
 const passport = require('passport'); // Importing Passport for authentication
+const BSON = require('bson');
+// or
+// import BSON from 'bson';
 
 const app = express(); // Creating an instance of Express
 
